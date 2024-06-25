@@ -44,3 +44,13 @@ https://react.dev/reference/react-dom/components/common
 
 UNPKG is a fast, global content delivery network for everything on npm
 https://unpkg.com/
+
+---
+
+In React, data flows down the component tree. This is referred to as one-way data flow. State, which will be discussed in the next chapter, can be passed from parent to child components as props
+
+---
+
+You can think of curly braces as a way to enter "JavaScript land" while you are in "JSX land". You can add any JavaScript expression (something that evaluates to a single value) inside curly braces.
+
+---
