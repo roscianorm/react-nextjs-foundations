@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import LikeButton from './like-button';
 
 function Header({ title }) {
 	const headerContent = title ? title : 'Develop. Preview. Ship.';
@@ -7,13 +7,6 @@ function Header({ title }) {
 
 export default function HomePage() {
 	const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
-
-	const [likes, setLikes] = useState(0);
-
-	function handleClick() {
-		setLikes(likes + 1);
-		console.log('increment like count');
-	}
 
 	return (
 		<div>
@@ -25,7 +18,7 @@ export default function HomePage() {
 					return <li key={index}>{name}</li>;
 				})}
 			</ul>
-			<button onClick={handleClick}>Like ({likes})</button>
+      <LikeButton />
 		</div>
 	);
 }
