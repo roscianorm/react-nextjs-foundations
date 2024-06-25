@@ -15,8 +15,8 @@ export default function HomePage() {
 			<Header title="React" />
 			<ul>
 				{names.map((name, index) => {
-					return <li key={index}>{name}</li>;
-				})}
+          return <li key={index}>{name}</li>;
+        })}
 			</ul>
       <LikeButton />
 		</div>
