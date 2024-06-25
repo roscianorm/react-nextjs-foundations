@@ -9,3 +9,11 @@ Infrastructure - where you deploy, store, and run your application code (serverl
 Performance - how to optimize your application for end-users.
 Scalability - how your application adapts as your team, data, and traffic grow.
 Developer Experience - your team's experience building and maintaining your application.
+
+---
+
+Imperative programming is like giving a chef step-by-step instructions on how to make a pizza. Declarative programming is like ordering a pizza without being concerned about the steps it takes to make the pizza.
+
+React is a popular declarative library that you can use build user interfaces.
+
+---
