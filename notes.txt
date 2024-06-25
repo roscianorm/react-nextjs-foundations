@@ -54,3 +54,11 @@ In React, data flows down the component tree. This is referred to as one-way dat
 You can think of curly braces as a way to enter "JavaScript land" while you are in "JSX land". You can add any JavaScript expression (something that evaluates to a single value) inside curly braces.
 
 ---
+
+Unlike props which are passed to components as the first function parameter, the state is initiated and stored within a component. You can pass the state information to children components as props, but the logic for updating the state should be kept within the component where state was initially created.
+
+---
+
+Props are read-only information that's passed to components. State is information that can change over time, usually triggered by user interaction.
+
+---

@@ -17,15 +17,26 @@
       }
 
       function HomePage() {
-         const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton']
+        const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+
+        const [likes, setLikes] = React.useState(0);
+
+
+        function handleClick(){
+          setLikes(likes + 1);
+          console.log('increment like count');
+        }
 
         return (<div>
           {/* Nesting the Header component */}
           <Header />
           <Header title="React"/>
-          <ul>
-            {names.map((name, index)=>{return <li key={index}>{name}</li>})}
-          </ul>
+          <ul>{
+            names.map((name, index)=>{
+              return <li key={index}>{name}</li>
+            })
+          }</ul>
+          <button onClick={handleClick}>Like ({likes})</button>
         </div>);
       }
 
